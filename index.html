@@ -205,7 +205,9 @@ footer { font-size: 13px; color: var(--muted); max-width: 52ch; }
       <p>I'm an AI/ML Engineer with <strong>4+ years</strong> of experience in two areas: <strong>document question-answering assistants</strong> that operations teams rely on, and <strong>fraud and risk models</strong> built on large financial datasets.</p>
       <p>Most of my time goes into evaluation and data quality. A model that looks good in a notebook can still fail real users, so I build the test sets, metrics and checks that catch problems before release.</p>
       <div class="stats" aria-label="Work by the numbers">
-        <div><b>6,200+</b><span>documents searched by my Q&amp;A assistant</span></div>
+        <div><b>38%</b><span>higher retrieval accuracy on my Q&amp;A assistant</span></div>
+        <div><b>31%</b><span>better answer relevance</span></div>
+        <div><b>4.2s &rarr; 1.6s</b><span>average query latency</span></div>
         <div><b>900+</b><span>real interactions in my evaluation set</span></div>
         <div><b>11.5M+</b><span>financial records prepared for risk scoring</span></div>
         <div><b>21%</b><span>better high-risk transaction detection</span></div>
@@ -222,7 +224,8 @@ footer { font-size: 13px; color: var(--muted); max-width: 52ch; }
             <h3>AI/ML Engineer · <span class="org">Amazon</span></h3>
             <ul>
               <li>Built an internal question-answering assistant for operations teams over 6,200+ reference documents, with sources attached to every answer.</li>
-              <li>Created an evaluation set from 900+ real user interactions; every chunking or prompt change is tested against it before release.</li>
+              <li>Improved retrieval accuracy by 38% and answer relevance by 31%, testing every chunking and prompt change against an evaluation set of 900+ real user interactions.</li>
+              <li>Cut average query latency from 4.2s to 1.6s by tuning inference and API request handling.</li>
               <li>Integrated the assistant into existing applications through APIs and handle release checks, response errors and monitoring alerts.</li>
             </ul>
             <ul class="tags" aria-label="Tools"><li>AWS</li><li>Bedrock</li><li>Lambda</li><li>S3</li><li>Python</li><li>RAG</li><li>LangChain</li><li>Embeddings</li><li>Vector search</li></ul>
@@ -264,9 +267,9 @@ footer { font-size: 13px; color: var(--muted); max-width: 52ch; }
           <dl>
             <dt>Problem</dt><dd>Operations staff needed answers buried across thousands of reference documents.</dd>
             <dt>Data</dt><dd>6,200+ internal reference documents, plus 900+ real user interactions used as an evaluation set.</dd>
-            <dt>Approach</dt><dd>A retrieval-augmented assistant that returns each answer with its source attached. Chunking and prompt changes run against the evaluation set before release, and unclear answers are reviewed with operations users.</dd>
+            <dt>Approach</dt><dd>A retrieval-augmented assistant that returns each answer with its source attached. Chunking and prompt changes run against the evaluation set before release, unclear answers are reviewed with operations users, and inference and API handling were tuned for speed.</dd>
           </dl>
-          <div class="result"><b>900+</b><span>real interactions checked before every release</span></div>
+          <div class="result"><b>+38%</b><span>retrieval accuracy</span><b>+31%</b><span>answer relevance</span><b>1.6s</b><span>average latency, down from 4.2s</span></div>
         </article>
         <article class="case">
           <div class="kicker">JPMorgan Chase · Classical ML</div>
