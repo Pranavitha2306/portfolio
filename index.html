@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Pranavitha Reddy, AI/ML Engineer. RAG assistants, model evaluation, and fraud and risk models.">
+<meta name="description" content="Pranavitha Reddy, AI/ML Engineer. Agentic AI and RAG systems, LLM evaluation, and fraud and credit risk models.">
 <meta property="og:title" content="Pranavitha Reddy | AI/ML Engineer">
-<meta property="og:description" content="RAG assistants, model evaluation, and fraud and risk models.">
+<meta property="og:description" content="Agentic AI and RAG systems, LLM evaluation, and fraud and credit risk models.">
 <title>Pranavitha Reddy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,6 +104,7 @@ section { display: grid; gap: 22px; scroll-margin-top: 32px; }
 .entry h3 .org { color: var(--accent); }
 .entry ul { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 6px; font-size: 15px; }
 .tags { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.entry ul.tags { display: flex; padding-left: 0; gap: 8px; font-size: 12px; }
 .tags li {
   font-family: var(--mono); font-size: 12px; color: var(--accent);
   background: var(--accent-soft); border-radius: 999px; padding: 3px 11px;
@@ -181,7 +182,7 @@ footer { font-size: 13px; color: var(--muted); max-width: 52ch; }
     <div>
       <h1>Pranavitha Reddy</h1>
       <div class="role">AI/ML Engineer</div>
-      <p class="pitch">I build retrieval-based LLM assistants and fraud models, and I make sure they keep working after release.</p>
+      <p class="pitch">I build agentic AI and RAG systems and fraud and risk models, and I make sure they keep working after release.</p>
       <div class="avail">Open to AI/ML Engineer roles</div>
     </div>
     <nav class="toc" aria-label="Sections">
@@ -196,21 +197,22 @@ footer { font-size: 13px; color: var(--muted); max-width: 52ch; }
     <div class="social">
       <a href="https://www.linkedin.com/in/pranavitha-reddy-a382932a4/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="#contact">preddy23.work@gmail.com</a>
+      <span style="color:var(--muted)">Plano, TX</span>
     </div>
   </header>
 
   <main class="content">
     <section id="about" class="about" aria-label="About">
       <div class="label mobile-label">About</div>
-      <p>I'm an AI/ML Engineer with <strong>4+ years</strong> of experience in two areas: <strong>document question-answering assistants</strong> that operations teams rely on, and <strong>fraud and risk models</strong> built on large financial datasets.</p>
-      <p>Most of my time goes into evaluation and data quality. A model that looks good in a notebook can still fail real users, so I build the test sets, metrics and checks that catch problems before release.</p>
+      <p>I'm an AI/ML Engineer with <strong>4+ years</strong> of experience in two areas: <strong>agentic AI and RAG systems</strong> on AWS, and <strong>fraud and credit risk models</strong> built on large financial datasets.</p>
+      <p>Much of my time goes into evaluation and reliability. An agent that looks good in a demo can still fail real users, so I build the tests, metrics, guardrails and monitoring that catch problems before and after release.</p>
       <div class="stats" aria-label="Work by the numbers">
-        <div><b>38%</b><span>higher retrieval accuracy on my Q&amp;A assistant</span></div>
-        <div><b>31%</b><span>better answer relevance</span></div>
-        <div><b>4.2s &rarr; 1.6s</b><span>average query latency</span></div>
-        <div><b>900+</b><span>real interactions in my evaluation set</span></div>
-        <div><b>11.5M+</b><span>financial records prepared for risk scoring</span></div>
-        <div><b>21%</b><span>better high-risk transaction detection</span></div>
+        <div><b>25%</b><span>faster task completion with my agentic shopping assistant</span></div>
+        <div><b>+15%</b><span>Recall@5 from hybrid RAG search</span></div>
+        <div><b>&minus;20%</b><span>P95 latency on LLM inference APIs</span></div>
+        <div><b>0.79 &rarr; 0.91</b><span>credit risk model AUC</span></div>
+        <div><b>18% &rarr; 11%</b><span>false-positive fraud alerts</span></div>
+        <div><b>2.5h &rarr; &lt;50m</b><span>analyst research time with a RAG tool</span></div>
       </div>
     </section>
 
@@ -219,39 +221,42 @@ footer { font-size: 13px; color: var(--muted); max-width: 52ch; }
       <div class="label desk-label">Experience</div>
       <div class="entries">
         <article class="entry">
-          <div class="when">2025 — Present</div>
+          <div class="when">Jan 2025 — Present</div>
           <div>
             <h3>AI/ML Engineer · <span class="org">Amazon</span></h3>
             <ul>
-              <li>Built an internal question-answering assistant for operations teams over 6,200+ reference documents, with sources attached to every answer.</li>
-              <li>Improved retrieval accuracy by 38% and answer relevance by 31%, testing every chunking and prompt change against an evaluation set of 900+ real user interactions.</li>
-              <li>Cut average query latency from 4.2s to 1.6s by tuning inference and API request handling.</li>
-              <li>Integrated the assistant into existing applications through APIs and handle release checks, response errors and monitoring alerts.</li>
+              <li>Built a production agentic shopping assistant with LangGraph, LangChain and LLMs on Amazon Bedrock that handles multi-turn conversations, product recommendations and query resolution, cutting task completion time by 25%.</li>
+              <li>Designed multi-agent workflows with LangGraph supervisor graphs and subgraphs for intent detection, product retrieval, comparison and response validation.</li>
+              <li>Improved Recall@5 by 15% with hybrid RAG search over Hugging Face embeddings, Pinecone and keyword retrieval.</li>
+              <li>Cut P95 latency by 20% with asynchronous FastAPI services for LLM inference and agent orchestration.</li>
+              <li>Added LLM evaluation and regression tests, guardrails, prompt versioning and human-in-the-loop review to keep multi-step agent workflows reliable.</li>
             </ul>
-            <ul class="tags" aria-label="Tools"><li>AWS</li><li>Bedrock</li><li>Lambda</li><li>S3</li><li>Python</li><li>RAG</li><li>LangChain</li><li>Embeddings</li><li>Vector search</li></ul>
+            <ul class="tags" aria-label="Tools"><li>Python</li><li>LangGraph</li><li>LangChain</li><li>Bedrock</li><li>Pinecone</li><li>Hugging Face</li><li>FastAPI</li><li>PySpark</li><li>Docker</li><li>S3</li></ul>
           </div>
         </article>
         <article class="entry">
-          <div class="when">2022 — 2024</div>
+          <div class="when">May 2022 — Dec 2024</div>
           <div>
-            <h3>Machine Learning Engineer · <span class="org">JPMorgan Chase</span></h3>
+            <h3>AI/ML Engineer · <span class="org">JPMorgan Chase</span></h3>
             <ul>
-              <li>Developed fraud and risk classification models used by internal analysts, improving high-risk transaction detection by 21%.</li>
-              <li>Prepared and validated 11.5M+ financial records, handling missing values, feature quality and heavy class imbalance.</li>
-              <li>Reported precision, recall and false-positive rates so risk teams could weigh detection against alert volume.</li>
+              <li>Developed and deployed fraud detection, credit risk and transaction monitoring models with XGBoost and Scikit-learn on large-scale financial data.</li>
+              <li>Raised credit risk AUC from 0.79 to 0.91 through feature selection, preprocessing and hyperparameter tuning.</li>
+              <li>Reduced false-positive fraud alerts from 18% to 11% using MLflow experiment tracking, model evaluation and drift monitoring.</li>
+              <li>Built batch and streaming feature pipelines with Apache Kafka, PySpark and Azure Databricks.</li>
+              <li>Cut analyst research time from 2.5 hours to under 50 minutes with a LangChain RAG tool over SEC filings, financial reports and internal documents.</li>
             </ul>
-            <ul class="tags" aria-label="Tools"><li>XGBoost</li><li>Scikit-learn</li><li>PySpark</li><li>Databricks</li><li>Azure ML</li><li>SQL</li></ul>
+            <ul class="tags" aria-label="Tools"><li>XGBoost</li><li>Scikit-learn</li><li>PySpark</li><li>Azure Databricks</li><li>Kafka</li><li>MLflow</li><li>LangChain</li><li>SQL</li><li>Azure DevOps</li></ul>
           </div>
         </article>
         <article class="entry">
-          <div class="when">2021</div>
+          <div class="when">Jun — Dec 2021</div>
           <div>
-            <h3>Data Science Intern · <span class="org">PeopleTech</span></h3>
+            <h3>Data Science Intern · <span class="org">People Tech Group</span></h3>
             <ul>
-              <li>Cleaned and analyzed 9,500+ operational records for team reporting and flagged recurring data-quality issues.</li>
-              <li>Built baseline prediction models and explained the results to senior analysts.</li>
+              <li>Built classification models in Python and scikit-learn, evaluated on precision, recall and F1.</li>
+              <li>Prepared and validated 9,500+ records with Pandas, NumPy and SQL, and tested Flask prediction APIs.</li>
             </ul>
-            <ul class="tags" aria-label="Tools"><li>Python</li><li>Pandas</li><li>SQL</li></ul>
+            <ul class="tags" aria-label="Tools"><li>Python</li><li>Pandas</li><li>NumPy</li><li>SQL</li><li>Flask</li></ul>
           </div>
         </article>
       </div>
@@ -262,24 +267,34 @@ footer { font-size: 13px; color: var(--muted); max-width: 52ch; }
       <div class="label desk-label">Case studies</div>
       <div class="cases">
         <article class="case">
-          <div class="kicker">Amazon · Generative AI on AWS</div>
-          <h3>Answers operations staff can verify</h3>
+          <div class="kicker">Amazon · Agentic AI on AWS</div>
+          <h3>A shopping assistant that finishes the job</h3>
           <dl>
-            <dt>Problem</dt><dd>Operations staff needed answers buried across thousands of reference documents.</dd>
-            <dt>Data</dt><dd>6,200+ internal reference documents, plus 900+ real user interactions used as an evaluation set.</dd>
-            <dt>Approach</dt><dd>A retrieval-augmented assistant that returns each answer with its source attached. Chunking and prompt changes run against the evaluation set before release, unclear answers are reviewed with operations users, and inference and API handling were tuned for speed.</dd>
+            <dt>Problem</dt><dd>Customers needed help finding, comparing and choosing products across multi-turn conversations, not just one-off answers.</dd>
+            <dt>Data</dt><dd>A product catalog of 100,000+ records, enriched and validated with attribute extraction pipelines in PySpark and SQL.</dd>
+            <dt>Approach</dt><dd>A LangGraph supervisor routes each turn to subgraphs for intent detection, retrieval, comparison and response validation, with LLMs on Amazon Bedrock. Hybrid RAG search combines embeddings and keywords. Evaluation checks groundedness and hallucinations, and guardrails plus human-in-the-loop review handle uncertain answers.</dd>
           </dl>
-          <div class="result"><b>+38%</b><span>retrieval accuracy</span><b>+31%</b><span>answer relevance</span><b>1.6s</b><span>average latency, down from 4.2s</span></div>
+          <div class="result"><b>&minus;25%</b><span>task completion time</span><b>+15%</b><span>Recall@5</span><b>&minus;20%</b><span>P95 latency</span></div>
         </article>
         <article class="case">
           <div class="kicker">JPMorgan Chase · Classical ML</div>
-          <h3>Catching more fraud without flooding analysts</h3>
+          <h3>Sharper credit risk, fewer false fraud alerts</h3>
           <dl>
-            <dt>Problem</dt><dd>Internal analysts needed better detection of high-risk transactions without a surge of false alerts.</dd>
-            <dt>Data</dt><dd>11.5M+ financial records with missing values, uneven feature quality and heavy class imbalance.</dd>
-            <dt>Approach</dt><dd>Classification models compared on precision, recall and false-positive rate, with documented features and validation steps so every update was tested the same way.</dd>
+            <dt>Problem</dt><dd>Risk teams needed more accurate credit risk predictions and fewer false fraud alerts competing for analyst time.</dd>
+            <dt>Data</dt><dd>Historical lending records and transaction events, processed in batch and streaming pipelines with Kafka, PySpark and Azure Databricks.</dd>
+            <dt>Approach</dt><dd>XGBoost and Scikit-learn models improved through feature selection, preprocessing and hyperparameter tuning, with MLflow experiment tracking and drift monitoring so every update was tested the same way.</dd>
           </dl>
-          <div class="result"><b>21%</b><span>improvement in high-risk transaction detection</span></div>
+          <div class="result"><b>0.79 &rarr; 0.91</b><span>credit risk AUC</span><b>18% &rarr; 11%</b><span>false-positive fraud alerts</span></div>
+        </article>
+        <article class="case">
+          <div class="kicker">Personal project · Healthcare</div>
+          <h3>Patient email triage with safety built in</h3>
+          <dl>
+            <dt>Problem</dt><dd>Clinic inboxes mix emergencies with billing and scheduling questions. Replies need to be fast, but never unsafe.</dd>
+            <dt>Data</dt><dd>Nine fictional clinic policy documents and made-up patient emails. It's a demo, with no real patient data.</dd>
+            <dt>Approach</dt><dd>A LangGraph agent reads emails from Gmail, classifies urgency with OpenAI, and drafts replies grounded in policies retrieved from Pinecone. A keyword red-flag check catches emergencies even if the LLM misses them, a fixed fallback reply is used when no policy matches, and staff approve every draft through a FastAPI review API. Runs on PostgreSQL and Docker with pytest and GitHub Actions CI.</dd>
+          </dl>
+          <div class="result"><b>Human-approved</b><span>every reply, with emergencies flagged first</span></div>
         </article>
       </div>
     </section>
@@ -288,22 +303,30 @@ footer { font-size: 13px; color: var(--muted); max-width: 52ch; }
       <div class="label mobile-label">Skills</div>
       <div class="label desk-label">Skills</div>
       <div class="skills">
-        <div class="skillrow"><div class="k">Programming</div><ul class="tags"><li>Python</li><li>SQL</li><li>Pandas</li><li>NumPy</li><li>PySpark</li><li>PostgreSQL</li></ul></div>
-        <div class="skillrow"><div class="k">ML</div><ul class="tags"><li>Scikit-learn</li><li>XGBoost</li><li>PyTorch</li><li>TensorFlow</li><li>Hugging Face</li><li>NLP</li><li>Model evaluation</li></ul></div>
-        <div class="skillrow"><div class="k">GenAI</div><ul class="tags"><li>LLMs</li><li>RAG</li><li>LangChain</li><li>LangGraph</li><li>Embeddings</li><li>Vector search</li><li>Prompt engineering</li></ul></div>
-        <div class="skillrow"><div class="k">Cloud &amp; MLOps</div><ul class="tags"><li>Bedrock</li><li>SageMaker</li><li>S3</li><li>Lambda</li><li>Azure ML</li><li>Azure OpenAI</li><li>Azure AI Search</li><li>Databricks</li><li>MLflow</li></ul></div>
-        <div class="skillrow"><div class="k">Engineering</div><ul class="tags"><li>FastAPI</li><li>REST APIs</li><li>Docker</li><li>Kubernetes</li><li>Git</li><li>CI/CD</li></ul></div>
+        <div class="skillrow"><div class="k">Programming</div><ul class="tags"><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>Pandas</li><li>PySpark</li></ul></div>
+        <div class="skillrow"><div class="k">ML</div><ul class="tags"><li>Scikit-learn</li><li>XGBoost</li><li>PyTorch</li><li>Feature engineering</li><li>Hyperparameter tuning</li><li>Fraud detection</li><li>Credit risk modeling</li></ul></div>
+        <div class="skillrow"><div class="k">GenAI</div><ul class="tags"><li>LLMs</li><li>LangGraph</li><li>LangChain</li><li>Multi-agent systems</li><li>RAG</li><li>Hybrid search</li><li>Prompt engineering</li><li>Tool calling</li><li>Guardrails</li><li>Human-in-the-loop</li></ul></div>
+        <div class="skillrow"><div class="k">Vector search</div><ul class="tags"><li>Pinecone</li><li>FAISS</li><li>Hugging Face embeddings</li></ul></div>
+        <div class="skillrow"><div class="k">Evaluation &amp; MLOps</div><ul class="tags"><li>MLflow</li><li>LLM evaluation</li><li>Groundedness</li><li>Hallucination detection</li><li>Recall@K</li><li>Drift detection</li></ul></div>
+        <div class="skillrow"><div class="k">Cloud &amp; data</div><ul class="tags"><li>Amazon Bedrock</li><li>S3</li><li>Azure Databricks</li><li>Azure DevOps</li><li>Apache Kafka</li><li>Spark</li></ul></div>
+        <div class="skillrow"><div class="k">Engineering</div><ul class="tags"><li>FastAPI</li><li>REST APIs</li><li>Docker</li><li>Git</li><li>CI/CD</li><li>pytest</li></ul></div>
       </div>
       <div class="label" style="margin-top: 24px;">Education</div>
       <div class="edu">
         <div class="row"><div class="when">2024</div><div><strong>MS, Computer Science</strong><span class="s">Southern Arkansas University</span></div></div>
         <div class="row"><div class="when">2017 — 2021</div><div><strong>B.Tech, Information Technology</strong><span class="s">St. Martin's Engineering College</span></div></div>
       </div>
+      <div class="label" style="margin-top: 24px;">Certifications</div>
+      <div class="edu">
+        <div class="row"><div class="when">DeepLearning.AI &amp; AWS</div><div><strong>Generative AI with Large Language Models</strong></div></div>
+        <div class="row"><div class="when"></div><div><strong>GenAI and LLMs on AWS</strong></div></div>
+        <div class="row"><div class="when">DeepLearning.AI</div><div><strong>Deep Learning Specialization</strong></div></div>
+      </div>
     </section>
 
     <section id="contact" class="contact" aria-labelledby="contact-h">
       <h2 id="contact-h">Let's talk</h2>
-      <p>I'm looking for AI/ML Engineer roles, especially work on RAG systems, model evaluation, or fraud and risk modeling.</p>
+      <p>I'm looking for AI/ML Engineer roles, especially work on agentic AI, RAG systems, LLM evaluation, or fraud and risk modeling.</p>
       <div class="copyrow">
         <code id="email">preddy23.work@gmail.com</code>
         <button class="copy" id="copy-email" type="button">Copy email</button>
